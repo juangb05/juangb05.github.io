@@ -8,11 +8,52 @@ share-img: /assets/img/path.jpg
 tags: [books, test]
 author: Sharon Smith and Barry Simpson
 ---
+Objetivo
+Obtener los coeficientes de Seebeck y de peltier
+Estimar la Resistencia interna de la celda
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+Resumen 
+Se utilizó una celda Peltier y unas termocuplas para estudiar el efecto Seebeck y el efecto Peltier y a partir de mediciones de tensiones sobre los dispositivos se obtuvo el coeficiente de Seebeck y de Peltier.
+En este proceso, también se deben considerar la difusión de calor a través del conductor, dada por la ley de Fourier, y la disipación de energía por efecto Joule.
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+Introducción
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
 
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+Los efectos termoeléctricos permiten convertir temperatura en voltaje en un conductor, las celdas Peltier son dispositivos que aprovechan estos efectos.
+ Éstas celdas o enfriadores termoeléctricos son un elemento de estado sólido que transfiere calor de una cara hacia la otra, por lo que mientras una se enfría, la otra se calienta. La dirección de la corriente determina qué lado se va a calentar o enfriar.
+
+
+Figura 1: Esquema de la celda Peltier utilizada, donde se especifica la cara caliente (en rojo) que libera calor y la cara fría (en azul) que lo absorbe. Además, pueden observarse las junturas que están conectadas P y N.[1]
+
+Cuando hay una diferencia de temperatura entre sus extremos, las cargas se acumulan en el extremo frío y se vacían en el caliente, generando un campo eléctrico que produce una fuerza electromotriz (fem). 
+El coeficiente Seebeck se define como la relación entre la fem () generada y la diferencia de temperatura (t), y depende de la temperatura
+(T) = ddT 
+Por otro lado, cuando circula una corriente eléctrica entre dos materiales diferentes, ocurre el efecto Peltier, un fenómeno inverso al de Seebeck, donde hay una transferencia de calor neta (Q').	
+Q'= AB I
+ El coeficiente Peltier depende de los materiales A y B, y el sentido de la corriente determina si la juntura se calienta o enfría. Los coeficientes de Seebeck y Peltier están relacionados con la conservación de la energía.
+					AB Ti = AB(Ti)
+
+Desarrollo experimental
+DIAGRAMA DEL SET UP
+Cara fría sobre el disipador porque la curva en función de t de la cara fria comenzaba a torcerse porque como que el disipador se calentaba si lo ponemos al revés y generaba eso
+NO ESTA A ESCALA
+Resultados y Conclusiones
+Se gráfico la evolución temporal de las dos caras de la celda peltier sometida a distintas corrientes. Se observa cierta simetría hasta que en cierto punto, la cara fría, comienza a calentarse debido a la presencia de efectos joule y de fourier que comienzan a calentar la cara fría. 
+
+Sobre los datos obtenidos de la experiencia de Seebeck se realizó un ajuste lineal sobre la caída de tensión medida en la celda y el diferencial de temperatura sobre ambas caras para obtener el valor del coeficiente. Se obtuvo un valor de S = seebeck con un r2 de y un mse de lo que indica un buen ajuste.
+
+Tomando los datos del estacionario de la evolución temporal (últimos diez datos de cada amperaje), hallamos la resistencia de la celda haciendo un ajuste sobre el voltaje medido con la smu y el valor de intensidad entregado. Se obtuvo un valor de R = resistencia con un r2 de y un mse de indicando un buen ajuste lo que indica un comportamiento lineal de la celda (Ley de Ohm)
+
+Peltier = 1.54 +- 0.3
+
+Desarrollar cuadratica de Peltier
+
+Desarrollar selección de errores
+Para 
+Referencias
+
+[1] Stefani, Termoelectricidad, Laboratorio 4. Departamento de Física, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires [link]
+
+[2] Yaakov Kraftmakher 2005 Eur. J. Phys. 26 959 [link]
+
+[3] 
